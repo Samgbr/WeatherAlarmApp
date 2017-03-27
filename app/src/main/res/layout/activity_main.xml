@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE4B5">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="example.com.finalproject.MainActivity">
+    <ProgressBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:indeterminate="true"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Downloading Weather Data"
+        android:id="@+id/progress_info"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#800000"
+        android:text=""
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:id="@+id/title"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table"
+        android:visibility="gone"
+        android:shrinkColumns="*"
+        android:stretchColumns="1">
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+        <TableRow
+            android:id="@+id/row1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Station Id: "
+                android:textSize="18dp"
+                android:textColor="#FF00FF"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#7B68EE"
+                android:textSize="18dp"
+                android:id="@+id/station_id"/>
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+        <TableRow
+            android:id="@+id/row2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Observation Time: "
+                android:textSize="18dp"
+                android:textColor="#FF00FF"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#7B68EE"
+                android:textSize="18dp"
+                android:id="@+id/observation_time"/>
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+        <TableRow
+            android:id="@+id/row3">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Observation Time RFC:   "
+                android:textSize="18dp"
+                android:textColor="#FF00FF"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#7B68EE"
+                android:textSize="18dp"
+                android:id="@+id/observation_time_rfc"/>
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+        <TableRow
+            android:id="@+id/row4">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperature: "
+                android:textSize="18dp"
+                android:textColor="#FF00FF"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#7B68EE"
+                android:textSize="18dp"
+                android:id="@+id/temp"/>
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+        <TableRow
+            android:id="@+id/row5">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wind: "
+                android:textSize="18dp"
+                android:textColor="#FF00FF"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:textColor="#7B68EE"
+                android:id="@+id/wind"/>
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+        <TableRow
+            android:id="@+id/row6">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DewPoint: "
+                android:textSize="18dp"
+                android:textColor="#FF00FF"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#7B68EE"
+                android:textSize="18dp"
+                android:id="@+id/dewpoint"/>
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+        <TableRow
+            android:id="@+id/row7">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wind Chill: "
+                android:textSize="18dp"
+                android:textColor="#FF00FF"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#7B68EE"
+                android:textSize="18dp"
+                android:id="@+id/windchill"/>
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+        <TableRow
+            android:id="@+id/row8">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mean Wave: "
+                android:textColor="#FF00FF"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#7B68EE"
+                android:textSize="18dp"
+                android:id="@+id/mean_wave"/>
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+    </TableLayout>
+</LinearLayout>
+</ScrollView>
